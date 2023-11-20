@@ -1,29 +1,38 @@
-import Slider from "react-slick";
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
+import "swiper/css/effect-fade";
 import img1 from "../../../assets/swiper_slide_1.jpg";
 import img2 from "../../../assets/swiper_slide_2.jpg";
 
-// Import css files
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-
 export const Carousel = () => {
   return (
-    <Slider
-      {...{
-        dots: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        slide: true,
+    <Swiper
+      slidesPerView={1}
+      loop={true}
+      centeredSlides={true}
+      effect="fade"
+      autoplay={{
+        delay: 3000,
+        disableOnInteraction: false,
       }}
+      pagination={{
+        clickable: true,
+      }}
+      navigation={true}
+      modules={[Autoplay, Pagination, Navigation]}
     >
-      <div>
+      <SwiperSlide>
         <img src={img1} alt="" />
-      </div>
-      <div>
+      </SwiperSlide>
+      <SwiperSlide>
         <img src={img2} alt="" />
-      </div>
-    </Slider>
+      </SwiperSlide>
+    </Swiper>
   );
 };
