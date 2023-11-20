@@ -4,7 +4,6 @@ import logo from "../../assets/logo.webp";
 import { FaBars } from "react-icons/fa";
 import { AiOutlineClose } from "react-icons/ai";
 
-
 const Header = () => {
   const [show, setShow] = useState(false);
   const [width, setwidth] = useState(0);
@@ -33,7 +32,7 @@ const Header = () => {
           alt="logo for website xyz.com"
         />
       </Link>
-      {width >= 800 ? (
+      {width >= 700 ? (
         <ul className="flex flex-wrap pl-12 text-white items-center text-lg justify-center md:justify-around w-full md:w-[50%]">
           <li className="mb-2 md:mb-0">
             <Link to="/" className="hover:underline">
