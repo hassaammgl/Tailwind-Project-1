@@ -9,9 +9,7 @@ const Header = () => {
   const [width, setwidth] = useState(0);
   const handleOnClick = () => {
     if (show) {
-      setTimeout(() => {
         setShow(false);
-      }, 100);
     } else if (!show) {
       setShow(true);
     }
