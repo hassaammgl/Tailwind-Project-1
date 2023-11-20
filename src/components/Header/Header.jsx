@@ -9,7 +9,7 @@ const Header = () => {
   const [width, setwidth] = useState(0);
   const handleOnClick = () => {
     if (show) {
-        setShow(false);
+      setShow(false);
     } else if (!show) {
       setShow(true);
     }
@@ -30,7 +30,7 @@ const Header = () => {
           alt="logo for website xyz.com"
         />
       </Link>
-      {width >= 700 ? (
+      {width >= 800 ? (
         <button type="button" className="w-6 h-6 absolute right-6 top-6">
           {show ? (
             <AiOutlineClose
