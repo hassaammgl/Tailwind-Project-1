@@ -25,7 +25,7 @@ const Header = () => {
   }, [width]);
 
   return (
-    <div className="bg-gray-600 w-full md:w-[100vw] flex flex-row p-4  justify-between font-sans items-center">
+    <div className="bg-gray-600 w-full md:w-[100vw] flex flex-row p-4   font-sans items-center">
       <Link to="/" className="flex justify-center items-center">
         <img
           src={logo}
@@ -34,7 +34,7 @@ const Header = () => {
         />
       </Link>
       {width >= 800 ? (
-        <ul className="flex flex-wrap text-white items-center text-lg justify-center md:justify-around w-full md:w-[50%]">
+        <ul className="flex flex-wrap pl-12 text-white items-center text-lg justify-center md:justify-around w-full md:w-[50%]">
           <li className="mb-2 md:mb-0">
             <Link to="/" className="hover:underline">
               Menu link 1
@@ -72,7 +72,7 @@ const Header = () => {
           </li>
         </ul>
       ) : (
-        <button type="button">
+        <button type="button" className="w-6 h-6 absolute right-6 top-6">
           {show ? (
             <AiOutlineClose
               className="w-6 h-6 text-white"
