@@ -30,7 +30,7 @@ const Header = () => {
           alt="logo for website xyz.com"
         />
       </Link>
-      {width <= 700 ? (
+      {width >= 700 ? (
         <button type="button" className="w-6 h-6 absolute right-6 top-6">
           {show ? (
             <AiOutlineClose
