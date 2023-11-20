@@ -31,6 +31,44 @@ const Header = () => {
         />
       </Link>
       {width >= 800 ? (
+        <ul className="flex flex-wrap pl-12 text-white items-center text-lg justify-center md:justify-around w-full md:w-[50%]">
+        <li className="mb-2 md:mb-0">
+          <Link to="/" className="hover:underline">
+            Menu link 1
+          </Link>
+        </li>
+        <li className="mb-2 md:mb-0">
+          <Link to="/" className="hover:underline">
+            Menu link 2
+          </Link>
+        </li>
+        <li className="mb-2 md:mb-0">
+          <Link to="/" className="hover:underline">
+            Menu link 3
+          </Link>
+        </li>
+        <li className="mb-2 md:mb-0">
+          <Link to="/" className="hover:underline">
+            Menu link 4
+          </Link>
+        </li>
+        <li className="mb-2 md:mb-0">
+          <Link to="/" className="hover:underline">
+            Menu link 5
+          </Link>
+        </li>
+        <li className="mb-2 md:mb-0">
+          <Link to="/" className="hover:underline">
+            Menu link 6
+          </Link>
+        </li>
+        <li className="mb-2 md:mb-0">
+          <Link to="/" className="hover:underline">
+            Menu link 7
+          </Link>
+        </li>
+      </ul>
+      ) : (
         <button type="button" className="w-6 h-6 absolute right-6 top-6">
           {show ? (
             <AiOutlineClose
@@ -41,44 +79,7 @@ const Header = () => {
             <FaBars className="w-6 h-6 text-white" onClick={handleOnClick} />
           )}
         </button>
-      ) : (
-        <ul className="flex flex-wrap pl-12 text-white items-center text-lg justify-center md:justify-around w-full md:w-[50%]">
-          <li className="mb-2 md:mb-0">
-            <Link to="/" className="hover:underline">
-              Menu link 1
-            </Link>
-          </li>
-          <li className="mb-2 md:mb-0">
-            <Link to="/" className="hover:underline">
-              Menu link 2
-            </Link>
-          </li>
-          <li className="mb-2 md:mb-0">
-            <Link to="/" className="hover:underline">
-              Menu link 3
-            </Link>
-          </li>
-          <li className="mb-2 md:mb-0">
-            <Link to="/" className="hover:underline">
-              Menu link 4
-            </Link>
-          </li>
-          <li className="mb-2 md:mb-0">
-            <Link to="/" className="hover:underline">
-              Menu link 5
-            </Link>
-          </li>
-          <li className="mb-2 md:mb-0">
-            <Link to="/" className="hover:underline">
-              Menu link 6
-            </Link>
-          </li>
-          <li className="mb-2 md:mb-0">
-            <Link to="/" className="hover:underline">
-              Menu link 7
-            </Link>
-          </li>
-        </ul>
+        
       )}
       {show ? (
         <div
