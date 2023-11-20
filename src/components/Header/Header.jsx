@@ -32,7 +32,7 @@ const Header = () => {
           alt="logo for website xyz.com"
         />
       </Link>
-      {width >= 700 ? (
+      {width <= 700 ? (
         <button type="button" className="w-6 h-6 absolute right-6 top-6">
           {show ? (
             <AiOutlineClose
@@ -42,7 +42,8 @@ const Header = () => {
           ) : (
             <FaBars className="w-6 h-6 text-white" onClick={handleOnClick} />
           )}
-        </button> ): (
+        </button>
+      ) : (
         <ul className="flex flex-wrap pl-12 text-white items-center text-lg justify-center md:justify-around w-full md:w-[50%]">
           <li className="mb-2 md:mb-0">
             <Link to="/" className="hover:underline">
@@ -80,7 +81,6 @@ const Header = () => {
             </Link>
           </li>
         </ul>
-      
       )}
       {show ? (
         <div
