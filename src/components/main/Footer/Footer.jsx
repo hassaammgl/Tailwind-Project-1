@@ -195,7 +195,7 @@ const Licence = () => {
   return (
     <section className="border-b-[1px] border-b-gray-400 pb-9 w-full md:w-[70%] flex justify-center items-center flex-col m-4 md:m-10">
       <div className="flex flex-col-reverse md:flex-row">
-        <p className="text-white mb-4 md:mr-4 md:mb-0">
+        <p className="text-white text-justify p-3 mb-4 md:mr-4 md:mb-0">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam
           voluptates atque aliquid nobis beatae repellendus animi alias quo
           repudiandae quisquam veritatis , amet consectetur adipisicing elit.
@@ -215,37 +215,9 @@ const Licence = () => {
 
 const FooterLinks_2 = () => {
   return (
-    // <section className="text-white  w-[70%] flex justify-between items-center p-10">
-    //   <span>Copyright &copy; brand name 2022</span>
-    //   <span>
-    //     <Link to={"/"} className="mx-2">
-    //       Footer Link
-    //     </Link>
-    //     |
-    //     <Link to={"/"} className="mx-2">
-    //       Footer Link
-    //     </Link>
-    //     |
-    //     <Link to={"/"} className="mx-2">
-    //       Footer Link
-    //     </Link>
-    //     |
-    //     <Link to={"/"} className="mx-2">
-    //       Footer Link
-    //     </Link>
-    //     |
-    //     <Link to={"/"} className="mx-2">
-    //       Footer Link
-    //     </Link>
-    //     |
-    //     <Link to={"/"} className="mx-2">
-    //       Footer Link
-    //     </Link>
-    //   </span>
-    // </section>
-    <section className="text-white w-full md:w-[70%] flex flex-col-reverse md:flex-row justify-between items-center p-4 md:p-10">
+    <section className="text-white w-full md:w-[70%] flex flex-col-reverse md:flex-row justify-between items-center p-4 md:p-0">
       <span className="mb-4 md:mb-0">Copyright &copy; brand name 2022</span>
-      <span className="flex flex-wrap gap-1 ">
+      <span className="flex justify-center items-center p-5 flex-wrap gap-1 ">
         <Link to={"/"} className="mx-1">
           Footer Link 1
         </Link>{" "}
