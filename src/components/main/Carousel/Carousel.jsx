@@ -24,14 +24,15 @@ export const Carousel = () => {
       pagination={{
         clickable: true,
       }}
+      className="w-full"
       navigation={true}
       modules={[Autoplay, Pagination, Navigation]}
     >
-      <SwiperSlide>
-        <img src={img1} alt="" />
+      <SwiperSlide className="w-full">
+        <img className="w-full" src={img1} alt="" />
       </SwiperSlide>
-      <SwiperSlide>
-        <img src={img2} alt="" />
+      <SwiperSlide className="w-full">
+        <img src={img2} className="w-full" alt="" />
       </SwiperSlide>
     </Swiper>
   );
