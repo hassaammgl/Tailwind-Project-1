@@ -118,7 +118,7 @@ const FooterLinks_1 = () => {
 const PaymentMethods = () => {
   return (
     <section className="border-b-[1px] border-b-gray-400 pb-9 w-full md:w-[70%] flex flex-col justify-center items-center  ">
-      <h1 className="text-4xl md:text-5xl font-bold mb-4 md:mb-7 text-gray-200">
+      <h1 className="text-2xl md:text-5xl font-bold mb-4 md:mb-7 text-gray-200">
         PAYMENT METHODS
       </h1>
       <span className="bg-white w-16 md:w-32 h-1 mb-4 md:mb-7"></span>

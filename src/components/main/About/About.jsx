@@ -2,42 +2,6 @@ import img from "../../../assets/content_image.jpg";
 
 const About = () => {
   return (
-    // <div className="w-[100%] flex justify-center items-center flex-col">
-    //   <h2 className="text-5xl text-center m-8 ">Content Main Title</h2>
-    //   <h2 className="w-32 mb-9 h-1 bg-black"></h2>
-    //   <div className="flex w-9/12 justify-between mx-auto ">
-    //     <img
-    //       src={img}
-    //       className="border-2 w-max  h-max border-black rounded-md"
-    //     />
-    //     <div className="flex flex-col mx-16 justify-between">
-    //       <p className="p-1">
-    //         Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-    //         aliquid saepe pariatur quasi inventore quae placeat voluptatem neque
-    //         dolor. Tempore beatae laboriosam dolores aut quasi aliquam, quisquam
-    //         voluptas laborum consectetur.
-    //       </p>
-    //       <p className="p-1">
-    //         Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-    //         aliquid saepe pariatur quasi inventore quae placeat voluptatem neque
-    //         dolor. Tempore beatae laboriosam dolores aut quasi aliquam, quisquam
-    //         voluptas laborum consectetur.
-    //       </p>
-    //       <p className="p-1">
-    //         Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-    //         aliquid saepe pariatur quasi inventore quae placeat voluptatem neque
-    //         dolor. Tempore beatae laboriosam dolores aut quasi aliquam, quisquam
-    //         voluptas laborum consectetur.
-    //       </p>
-    //       <p className="p-1">
-    //         Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-    //         aliquid saepe pariatur quasi inventore quae placeat voluptatem neque
-    //         dolor. Tempore beatae laboriosam dolores aut quasi aliquam, quisquam
-    //         voluptas laborum consectetur.
-    //       </p>
-    //     </div>
-    //   </div>
-    // </div>
     <div className="w-full max-w-screen-xl mx-auto p-4 md:p-8 lg:p-12">
       <h2 className="text-2xl md:text-3xl lg:text-4xl text-center mb-4 md:mb-6">
         Content Main Title
